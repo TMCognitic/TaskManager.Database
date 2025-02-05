@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[Tache]
 (
 	[Id] INT NOT NULL IDENTITY, 
-    [Titre] NVARCHAR(50) NOT NULL, 
+    [Titre] NVARCHAR(255) NOT NULL, 
     [DateCreation] DATETIME2 NOT NULL
         CONSTRAINT DF_Tache_DateCreation DEFAULT (SYSDATETIME()),
     [Status] NVARCHAR(20) NOT NULL

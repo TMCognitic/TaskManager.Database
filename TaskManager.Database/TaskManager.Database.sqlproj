@@ -72,6 +72,11 @@
     <Build Include="Procedures\Register.sql" />
     <Build Include="Functions\CreatePasswd.sql" />
     <Build Include="Procedures\Login.sql" />
+    <Build Include="Procedures\GetTaches.sql" />
+    <Build Include="Procedures\CreateTache.sql" />
+    <Build Include="Procedures\UpdateTache.sql" />
+    <Build Include="Procedures\GetTacheById.sql" />
+    <Build Include="Procedures\ChangeTacheStatus.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TaskManager.Database.publish.xml" />
