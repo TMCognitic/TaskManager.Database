@@ -6,6 +6,18 @@
 AS
 BEGIN
 	BEGIN TRY
+		IF LEN(TRIM(@Nom)) = 0
+		BEGIN
+			RAISERROR (N'Invalid value in @Nom', 16, 1);
+			RETURN;
+		END
+
+		IF LEN(TRIM(@Prenom)) = 0
+		BEGIN
+			RAISERROR (N'Invalid value in @Prenom', 16, 1);
+			RETURN;
+		END
+
 		INSERT INTO Utilisateur (Nom, Prenom, Email, Passwd)
 		VALUES (@Nom, @Prenom, @Email, dbo.CreatePasswd(@Passwd));
 	END TRY
