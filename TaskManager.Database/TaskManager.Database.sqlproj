@@ -67,8 +67,8 @@
   <ItemGroup>
     <Build Include="Tables\Tache.sql" />
     <Build Include="Tables\Utilisateur.sql" />
-    <Build Include="Security\Schemas\AppUser.sql" />
-    <Build Include="Security\Roles\AppUser.sql" />
+    <Build Include="Security\Schemas\AppUserSchema.sql" />
+    <Build Include="Security\Roles\AppUserRole.sql" />
     <Build Include="Procedures\Register.sql" />
     <Build Include="Functions\CreatePasswd.sql" />
     <Build Include="Procedures\Login.sql" />
@@ -77,6 +77,8 @@
     <Build Include="Procedures\UpdateTache.sql" />
     <Build Include="Procedures\GetTacheById.sql" />
     <Build Include="Procedures\ChangeTacheStatus.sql" />
+    <Build Include="Procedures\DeleteTache.sql" />
+    <Build Include="Security\Roles\AppUserRoleStagiaire.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TaskManager.Database.publish.xml" />

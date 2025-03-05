@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [AppUser].[ChangeTacheStatus]
+﻿CREATE PROCEDURE [AppUserSchema].[ChangeTacheStatus]
 	@Id int,
 	@Status NVARCHAR(20),
 	@UtilisateurId INT

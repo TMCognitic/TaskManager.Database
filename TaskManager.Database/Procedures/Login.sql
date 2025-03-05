@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [AppUser].[Login]
+﻿CREATE PROCEDURE [AppUserSchema].[Login]
 	@Email NVARCHAR(384),
 	@Passwd NVARCHAR(20)
 AS

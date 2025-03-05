@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [AppUser].[GetTaches]
+﻿CREATE PROCEDURE [AppUserSchema].[GetTaches]
 	@UtilisateurId INT
 AS
 BEGIN

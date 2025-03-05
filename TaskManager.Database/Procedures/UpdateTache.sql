@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [AppUser].[UpdateTache]
+﻿CREATE PROCEDURE [AppUserSchema].[UpdateTache]
 	@Id int,
 	@Titre NVARCHAR(255),
 	@Status NVARCHAR(20),

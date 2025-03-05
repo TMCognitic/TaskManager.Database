@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [AppUser].[GetTacheById]
+﻿CREATE PROCEDURE [AppUserSchema].[GetTacheById]
 	@Id INT,
 	@UtilisateurId INT
 AS

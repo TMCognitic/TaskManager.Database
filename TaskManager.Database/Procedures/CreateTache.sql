@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [AppUser].[CreateTache]
+﻿CREATE PROCEDURE [AppUserSchema].[CreateTache]
 	@Titre NVARCHAR(255), 
     @UtilisateurId INT
 AS

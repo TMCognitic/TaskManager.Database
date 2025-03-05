@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [AppUser].[Register]
+﻿CREATE PROCEDURE [AppUserSchema].[Register]
 	@Nom NVARCHAR(50),
 	@Prenom NVARCHAR(50),
 	@Email NVARCHAR(384),
@@ -8,14 +8,12 @@ BEGIN
 	BEGIN TRY
 		IF LEN(TRIM(@Nom)) = 0
 		BEGIN
-			RAISERROR (N'Invalid value in @Nom', 16, 1);
-			RETURN;
+			RAISERROR (N'Invalid value in @Nom', 17, 1);
 		END
 
 		IF LEN(TRIM(@Prenom)) = 0
 		BEGIN
-			RAISERROR (N'Invalid value in @Prenom', 16, 1);
-			RETURN;
+			RAISERROR (N'Invalid value in @Prenom', 17, 1);
 		END
 
 		INSERT INTO Utilisateur (Nom, Prenom, Email, Passwd)
